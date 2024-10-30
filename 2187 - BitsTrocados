@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+
+    int V = 0, i, n = 0;
+    int I, J, K, L;
+
+    while(scanf("%d", &V) > 0)
+    {
+            I = V/50;
+            J = (V%50)/10;
+            K = ((V%50)%10)/5;
+            L = ((((V%50)%10)%5)/1);
+
+        if(V == 0)
+        {
+            return 0;
+        }
+
+     n++;
+     printf("Teste %d\n", n);
+     printf("%d %d %d %d\n\n", I, J, K, L);
+    }
+
+    return 0;
+}
