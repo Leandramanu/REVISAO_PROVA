@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+
+    int L, R, soma;
+
+    while((scanf("%d %d", &L, &R) && L + R > 0))
+    {
+        soma = L + R;
+
+        if(L == 0 && R == 0)
+        {
+            return 0;
+        }
+          printf("%d\n", soma);
+    }
+    return 0;
+}
