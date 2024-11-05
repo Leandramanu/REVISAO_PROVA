@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+
+    int N, i;
+    double nt1, nt2, nt3, media;
+
+    scanf("%d", &N);
+
+    for(i = 0; i < N ; i++)
+    {
+        scanf("%lf %lf %lf", &nt1, &nt2, &nt3);
+        media = ((nt1*2.0)+(nt2*3.0)+(nt3*5.0))/10.0;
+        printf("%.1lf\n", media);
+    }
+
+    return 0;
+}
