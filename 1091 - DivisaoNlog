@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main(){
+
+    int k;
+    //Rodar enquanto for verdadeiro.
+    while (scanf("%d", &k) && k > 0)
+    {
+        int m, n;
+        scanf("%d %d", &m, &n);
+
+        for (int i = 0; i < k; i++)
+        {
+            int x, y;
+            scanf("%d %d", &x, &y);
+
+            if (x == m || y == n)
+            {
+                printf("divisa\n");
+            }
+            else if (x > m && y > n)
+            {
+                printf("NE\n");
+            }
+            else if (x < m && y > n)
+            {
+                printf("NO\n");
+            }
+            else if (x > m && y < n)
+            {
+                printf("SE\n");
+            }
+            else
+            {
+                printf("SO\n");
+            }
+        }
+    }
+    return 0;
+
+}
